@@ -1,16 +1,29 @@
-package systemController;
+package osKernel;
+
+import memory.PartitionMemory;
+
+import java.nio.file.Path;
+import java.util.ArrayList;
 
 public class SystemProcess {
-    private String name;
     private int id;
+    private String name;
+    private Path filePath;
     private ExecutionState state;
-    private int counter;
+    private ArrayList<String>instructions;
+    private int size;
+    private int startAdress;
+    private int pc=-1;
 
-    public SystemProcess(String name,int id,ExecutionState state, int counter){
-        this.name=name;
-        this.id=id;
-        this.state=state;
-        this.counter=counter;
+    public int getId() {
+        return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public Path getFilePath() {
+        return filePath;
+    }
 }

@@ -1,2 +1,4 @@
-package operatingSystem;public class OSExecute {
+package operatingSystem;
+
+public class OSExecute {
 }

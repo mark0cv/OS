@@ -1,4 +1,4 @@
-package shell;
+package operatingSystem;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;

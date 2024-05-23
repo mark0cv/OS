@@ -1,2 +1,4 @@
-package operatingSystem;public class CommandInterpreter {
+package operatingSystem;
+
+public class CommandInterpreter {
 }

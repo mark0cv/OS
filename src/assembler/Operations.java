@@ -1,59 +1,49 @@
-package asembler;
+package assembler;
 
 import java.util.Stack;
 
 public class Operations {
-    private static Stack<String>stack=new Stack<>();
+    private static Stack<String> stack = new Stack<>();
 
-    public static void push(String value){
+    public static void pushToStack(String value) {
         stack.push(value);
     }
-    public static String pop(){
+
+    public static String popFromStack() {
         return stack.pop();
     }
-    public static void add(){
-        String a=stack.pop();
-        String b=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        Integer intB=Integer.parseInt(b);
-        Integer result=intA+intB;
-        stack.push(String.valueOf(result));
+
+    public static void addValues() {
+        String a = stack.pop();
+        String b = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) + Integer.parseInt(b)));
     }
 
-    public static void sub(){
-        String a=stack.pop();
-        String b=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        Integer intB=Integer.parseInt(b);
-        Integer result=intA-intB;
-        stack.push(String.valueOf(result));
+    public static void subtractValues() {
+        String a = stack.pop();
+        String b = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) - Integer.parseInt(b)));
     }
-    public static void mul(){
-        String a=stack.pop();
-        String b=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        Integer intB=Integer.parseInt(b);
-        Integer result=intA*intB;
-        stack.push(String.valueOf(result));
+
+    public static void multiplyValues() {
+        String a = stack.pop();
+        String b = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) * Integer.parseInt(b)));
     }
-    public static void div(){
-        String a=stack.pop();
-        String b=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        Integer intB=Integer.parseInt(b);
-        Integer result=intA/intB;
-        stack.push(String.valueOf(result));
+
+    public static void divideValues() {
+        String a = stack.pop();
+        String b = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) / Integer.parseInt(b)));
     }
-    public static void inc(){
-        String a=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        intA++;
-        stack.push(String.valueOf(intA));
+
+    public static void incrementValue() {
+        String a = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) + 1));
     }
-    public static void dec(){
-        String a=stack.pop();
-        Integer intA=Integer.parseInt(a);
-        intA--;
-        stack.push(String.valueOf(intA));
+
+    public static void decrementValue() {
+        String a = stack.pop();
+        stack.push(String.valueOf(Integer.parseInt(a) - 1));
     }
 }

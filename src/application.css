@@ -1,0 +1,35 @@
+.root {
+    -fx-background-color: #171717;
+    -fx-border-color: #f60000;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-background-color: #000000;
+    -fx-font-family: Consolas, monospace;
+    -fx-font-size: 16px;
+    -fx-display-caret: true;
+    -fx-focus-color: #ecec18;
+    -fx-text-box-border: #fffdfd;
+    -fx-border-color: #f50000;
+    -fx-text-fill: #FFFFFF;
+}
+
+.text-field {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF; /* Bijeli tekst */
+    -fx-font-family: Consolas, monospace;
+    -fx-font-size: 16px;
+    -fx-border-color: #ffffff;
+}
+
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-border-color: #000000;
+}
+
+.button:hover {
+    -fx-background-color: #808080;
+    -fx-text-fill: #000000;
+}
