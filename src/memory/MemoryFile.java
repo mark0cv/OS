@@ -1,6 +1,6 @@
 package memory;
 
-import memory.Disk.Pointer;
+import memory.SecondaryMemory.Pointer;
 public class MemoryFile {
     private String name;
     private Pointer start;

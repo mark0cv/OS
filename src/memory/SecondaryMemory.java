@@ -2,14 +2,14 @@ package memory;
 
 import java.util.ArrayList;
 
-public class Disk {
+public class SecondaryMemory {
 
     private static int size;
     private static Block[] blocks;
     private static int numberOfBlocks;
     public static ArrayList<MemoryFile>files;
 
-    public Disk(){
+    public SecondaryMemory(){
         size=2048;
         numberOfBlocks=size/Block.getSIZE();
         blocks=new Block[numberOfBlocks];

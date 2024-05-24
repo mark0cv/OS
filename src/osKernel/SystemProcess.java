@@ -26,4 +26,8 @@ public class SystemProcess {
     public Path getFilePath() {
         return filePath;
     }
+
+    public ArrayList<String> getInstructions() {
+        return instructions;
+    }
 }

@@ -1,9 +1,9 @@
 package operatingSystem;
 
 import fileSystem.FileSystem;
-import memory.Disk;
+import memory.SecondaryMemory;
 
 public class OS {
     public static FileSystem tree;
-    public static Disk memory;
+    public static SecondaryMemory memory;
 }
